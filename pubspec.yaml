@@ -64,6 +64,10 @@ flutter:
     - assets/Temp_background.png
     - assets/Google.png
     - assets/Apple.png
+    - assets/jk.jpeg
+    - assets/Tangled.jpeg
+    - assets/dory.jpeg
+    - assets/tom.jpeg
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
