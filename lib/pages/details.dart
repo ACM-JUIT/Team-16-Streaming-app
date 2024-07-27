@@ -1,43 +1,13 @@
 import 'package:flutter/material.dart';
 
-void main() {
-  runApp(const MyApp());
-}
-
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      theme: ThemeData(
-        brightness: Brightness.dark,
-        colorScheme: const ColorScheme.dark(
-          primary: Colors.white,
-          secondary: Color(0xFF999187),
-          surface: Color(0xFF999187),
-          error: Colors.red,
-          onPrimary: Colors.black,
-          onSecondary: Colors.white,
-          onSurface: Colors.white,
-          onError: Colors.white,
-        ),
-      ),
-      home: Scaffold(
-        backgroundColor: Colors.grey[900],
-        body: const Center(
-          child: SingleChildScrollView(
-            child: MovieCard(),
-          ),
-        ),
-      ),
-    );
-  }
-}
-
-class MovieCard extends StatelessWidget {
+class MovieCard extends StatefulWidget {
   const MovieCard({super.key});
 
+  @override
+  State<MovieCard> createState() => _MovieCardState();
+}
+
+class _MovieCardState extends State<MovieCard> {
   @override
   Widget build(BuildContext context) {
     return Padding(
